@@ -27,8 +27,28 @@
           <v-container>
             <v-layout>
               <v-flex>
-                <v-list>
-                  <v-icon blue--text>gmail</v-icon>
+                <v-list id="social_icons">
+                  <a
+                    href="https://www.linkedin.com/in/bibekmanshrestha/"
+                    target="_blank"
+                  >
+                    <v-icon size="60px" color="blue darken-3"
+                      >fab fa-linkedin</v-icon
+                    >
+                  </a>
+                  <a href="https://github.com/BibekStha" target="_blank">
+                    <v-icon size="60px" color="blue darken-3"
+                      >fab fa-github-square</v-icon
+                    >
+                  </a>
+                  <!-- <a href="https://twitter.com/bbekstha" target="_blank">
+                    <v-icon size="60px" color="blue darken-3">fab fa-twitter-square</v-icon>
+                  </a> -->
+                  <a href="mailto:bibekmanshrestha@gmail.com" target="_blank">
+                    <v-icon size="60px" color="blue darken-3"
+                      >fas fa-envelope-square</v-icon
+                    >
+                  </a>
                 </v-list>
               </v-flex>
             </v-layout>
@@ -69,5 +89,11 @@ body {
 a span {
   text-decoration: underline;
   text-decoration-color: magenta;
+}
+#social_icons i {
+  padding: 0 20px;
+}
+#social_icons {
+  padding-bottom: 60px;
 }
 </style>
