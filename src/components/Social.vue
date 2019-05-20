@@ -44,7 +44,7 @@
                   <!-- <a href="https://twitter.com/bbekstha" target="_blank">
                     <v-icon size="60px" color="blue darken-3">fab fa-twitter-square</v-icon>
                   </a> -->
-                  <a href="mailto:bibekmanshrestha@gmail.com" target="_blank">
+                  <a href="mailto:contact@bibekstha.me" target="_blank">
                     <v-icon size="60px" color="blue darken-3"
                       >fas fa-envelope-square</v-icon
                     >
