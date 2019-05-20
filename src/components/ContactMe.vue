@@ -123,10 +123,10 @@ export default {
       var data = this.getFormData(form); // get the values submitted in the form
 
       /* OPTION: Remove this comment to enable SPAM prevention, see README.md
-          if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
-            return false;
-          }
-          */
+            if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+              return false;
+            }
+            */
       console.log(data.email);
       if (!data.email || !this.validEmail(data.email)) {
         // if email is not valid show error
@@ -252,6 +252,7 @@ input {
   font-size: 16px;
   font-weight: 300;
 }
+
 #contact_form {
   font-size: 20px;
   font-weight: 300;
@@ -261,6 +262,7 @@ input {
   padding-bottom: 10px;
   white-space: pre;
 }
+
 #contact_form > div {
   display: flex;
   flex-direction: column;
@@ -268,10 +270,12 @@ input {
   align-items: flex-start;
   padding-top: 10px;
 }
+
 #contact_form > button {
   padding-top: 30px;
   margin-left: -15%;
 }
+
 #contact_form input,
 #contact_form textarea {
   border: 1px solid lightgray;
@@ -280,23 +284,27 @@ input {
   margin-top: 5px;
   font-size: 18px;
 }
+
 #thankyou_message {
   // margin-left: -15%;
   padding: 50px 0 70px;
   font-weight: 300;
   font-size: 24px;
 }
+
 #submit_button {
   margin-left: -15%;
   width: inherit;
   display: flex !important;
   align-items: center !important;
 }
+
 #submit_button > button {
   padding: 5px 20px;
   border: 1px solid lightgray;
   border-radius: 3px;
 }
+
 #submit_button > button:hover {
   border: 1px solid #00bcd4;
   background-color: lightcyan;
