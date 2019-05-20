@@ -52,5 +52,6 @@ export default {
   bottom: 10px;
   right: 10px;
   color: #00b8d4;
+  font-family: "Handlee", cursive;
 }
 </style>
