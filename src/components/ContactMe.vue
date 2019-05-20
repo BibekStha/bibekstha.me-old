@@ -8,7 +8,7 @@
       max-width="600px"
     >
       <template v-slot:activator="{ on }">
-        <a v-link="" v-on="on">
+        <a v-on="on">
           <img
             src="../assets/contact.svg"
             alt="Grad Certificate Logo"
@@ -26,16 +26,32 @@
           <v-container grid-list-xl>
             <v-layout wrap>
               <v-flex xs6>
-                <v-text-field label="Full name" required></v-text-field>
+                <v-text-field
+                  label="Full name"
+                  v-model="fullname"
+                  required
+                ></v-text-field>
               </v-flex>
               <v-flex xs6>
-                <v-text-field label="Email address" required></v-text-field>
+                <v-text-field
+                  label="Email address"
+                  v-model="sender"
+                  required
+                ></v-text-field>
               </v-flex>
               <v-flex xs12>
-                <v-text-field label="Subject" required></v-text-field>
+                <v-text-field
+                  label="Subject"
+                  v-model="subject"
+                  required
+                ></v-text-field>
               </v-flex>
               <v-flex xs12>
-                <v-textarea label="Message" required></v-textarea>
+                <v-textarea
+                  label="Message"
+                  v-model="body"
+                  required
+                ></v-textarea>
               </v-flex>
               <span class="pl-3" id="required_info"
                 >All fields are required</span
@@ -48,7 +64,7 @@
           <v-btn color="cyan darken-1" flat @click="dialog = false"
             >Cancel</v-btn
           >
-          <v-btn color="cyan darken-1" flat @click="dialog = false"
+          <v-btn color="cyan darken-1" flat @click="sendemail"
             >Send email</v-btn
           >
         </v-card-actions>
@@ -61,8 +77,15 @@
 export default {
   data() {
     return {
-      dialog: false
+      dialog: false,
+      fullname: "",
+      sender: "",
+      subject: "",
+      body: ""
     };
+  },
+  methods: {
+    sendemail: function() {}
   }
 };
 </script>
