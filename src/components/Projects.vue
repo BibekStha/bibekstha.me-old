@@ -9,14 +9,14 @@
         origin="center center"
       >
         <template v-slot:activator="{ on }">
-          <a v-link="" v-on="on">
+          <a v-on="on">
             <img
               src="../assets/project.svg"
               alt="Grad Certificate Logo"
               width="30px"
               height="auto"
             />
-            <span class="section_heading">My Projects</span>
+            <span class="section_heading"> My Projects</span>
           </a>
         </template>
         <v-card>

@@ -8,14 +8,14 @@
         origin="center center"
       >
         <template v-slot:activator="{ on }">
-          <a v-link="" v-on="on">
+          <a v-on="on">
             <img
               src="../assets/networking.svg"
               alt="Grad Certificate Logo"
               width="30px"
               height="auto"
             />
-            <span class="section_heading">Let's Connect</span>
+            <span class="section_heading"> Let's Connect</span>
           </a>
         </template>
         <v-card>

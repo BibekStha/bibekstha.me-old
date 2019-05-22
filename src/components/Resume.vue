@@ -16,7 +16,7 @@
               width="30px"
               height="auto"
             />
-            <span class="section_heading">My Resume</span>
+            <span class="section_heading"> My Resume</span>
           </a>
         </template>
         <v-card>

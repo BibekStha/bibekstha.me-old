@@ -15,7 +15,7 @@
             width="30px"
             height="auto"
           />
-          <span class="section_heading">Contact Me</span>
+          <span class="section_heading"> Contact Me</span>
         </a>
       </template>
       <v-card>

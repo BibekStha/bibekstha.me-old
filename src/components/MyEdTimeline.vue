@@ -8,14 +8,14 @@
       origin="center center"
     >
       <template v-slot:activator="{ on }">
-        <a v-link="" v-on="on">
+        <a v-on="on">
           <img
             src="../assets/temperature.svg"
             alt="Degree Logo"
             width="30px"
             height="auto"
           />
-          <span class="section_heading">My Degrees</span>
+          <span class="section_heading"> My Degrees</span>
         </a>
       </template>
       <v-card>
