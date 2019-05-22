@@ -70,8 +70,7 @@
                 class="button-success pure-button button-xlarge"
                 @click="handleFormSubmit"
               >
-                <i class="fa fa-paper-plane"></i>&nbsp;Send
-              </button>
+                <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
             </div>
           </form>
 
