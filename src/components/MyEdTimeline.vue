@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs2 offset-xs2>
+  <v-flex sm2 xs12 offset-sm2 offset-xs0>
     <v-dialog
       v-model="dialog"
       fullscreen
@@ -31,13 +31,13 @@
                 <h1 class="font-weight-thin section_title">
                   Education History
                 </h1>
-                <v-flex px-5>
+                <v-flex>
                   <Timeline
                     :timeline-items="dataTimeline"
                     :message-when-no-items="messageWhenNoItems"
                     :unique-year="true"
                     order="desc"
-                    class="px-5"
+                    
                   />
                 </v-flex>
               </v-list>

@@ -6,7 +6,7 @@
         <small>[ Group ]</small>
         <v-layout row wrap pt-2>
           <v-flex xs5>
-            <a href="http://dotastats.ga" target="_blank">
+            <a href="http://get-together.gq" target="_blank">
               <img
                 src="../../assets/gettogether.gif"
                 alt=""

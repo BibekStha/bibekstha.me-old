@@ -21,7 +21,7 @@
           </v-flex>
 
           <v-flex xs5>
-            <a href="http://dotastats.ga" target="_blank">
+            <a href="http://erudition-journal.azurewebsites.net" target="_blank">
               <img
                 src="../../assets/erudition.gif"
                 alt=""

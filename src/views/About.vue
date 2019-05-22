@@ -1,11 +1,11 @@
 <template>
-  <v-container class="about" full_height>
+  <v-container class="about" full_height id="about">
     <v-layout column fill-height>
       <!-- <v-flex shrink mb-2>
         <p class="font-weight-light">Bibek Shrestha</p>
       </v-flex> -->
       <v-layout column justify-center id="about-section">
-        <v-layout id="center-img-container">
+        <v-layout id="center-img-container" class="order-xs-1">
           <!-- <img src="../assets/Bibek.png" id="center-img"> -->
           <v-flex id="center_name_container">
             <v-layout
@@ -19,7 +19,7 @@
             >
           </v-flex>
         </v-layout>
-        <v-layout row justify-center align-center>
+        <v-layout row justify-center align-center order-xs-2>
           <webdev></webdev>
         </v-layout>
         <v-layout row align-center>
@@ -28,12 +28,6 @@
         </v-layout>
         <v-layout row align-center>
           <contact-me></contact-me>
-          <!-- <v-flex xs2 offset-xs6>
-            <a href="Resume.pdf" target="_blank">
-              <img src="../assets/resume.svg" alt="Grad Certificate Logo" width="30px" height="auto">
-              <span class="section_heading">Download my resume</span>
-            </a>
-          </v-flex> -->
           <resume></resume>
         </v-layout>
         <v-layout row align-center>
@@ -132,5 +126,36 @@ span.section_heading:hover {
   font-weight: 300;
   font-size: 32px;
   color: #0a3880;
+}
+
+@media screen and (max-width: 620px) {
+  #about-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #center-img-container {
+    border: none;
+    border-radius: 0;
+    font-size: 1.2em;
+    position: absolute;
+    top: 30px;
+    // right: 0;
+    max-height: 20px;
+    max-width: inherit;
+    width: 100%;
+    height: 20px;
+    padding-bottom: 30px;
+
+  }
+  #about-section>div {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  #webdev {
+    padding-top: 100px;
+    height: 10px;
+  }
 }
 </style>

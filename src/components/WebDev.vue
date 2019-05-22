@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs4 id="webdev">
+  <v-flex sm4 xs12 id="webdev">
     <v-layout row justify-center>
       <v-dialog
         v-model="dialog"
@@ -88,4 +88,12 @@ export default {
   text-align: start;
   color: #0d47a1;
 }
+
+
+@media screen and (max-width: 620px) {
+  #webdev p {
+    padding: 0 10px;
+  }
+}
+
 </style>

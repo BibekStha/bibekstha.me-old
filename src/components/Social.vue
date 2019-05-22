@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs3 offset-xs3>
+  <v-flex sm3 xs12 offset-sm3 offset-xs0>
     <v-layout row justify-center>
       <v-dialog
         v-model="dialog"

@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs2 offset-xs1>
+  <v-flex sm2 xs12 offset-sm1 offset-xs0>
     <v-dialog
       v-model="dialog"
       hide-overlay

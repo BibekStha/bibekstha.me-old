@@ -1,6 +1,6 @@
 <template>
-  <v-layout class="home" row full_height>
-    <v-layout xs12 sm6 align-end ma-0 home-block>
+  <v-layout class="home" row full_height id="home">
+    <v-layout xs12 sm6 align-end ma-0 home-block order-sm1 order-xs1 id="home_img">
       <v-flex fsz>
         <router-link to="/about">
           <img
@@ -11,7 +11,7 @@
         </router-link>
       </v-flex>
     </v-layout>
-    <v-flex pa-1 xs12 sm6 home-block>
+    <v-flex pa-1 xs12 sm6 home-block order-sm2 order-xs1 id="home_intro">
       <Intro v-if="intro_status" @click="hideIntro" />
     </v-flex>
     <v-layout id="intro_info">
@@ -53,5 +53,32 @@ export default {
   right: 10px;
   color: #00b8d4;
   font-family: "Handlee", cursive;
+}
+
+@media screen and (max-width: 620px) {
+  .home#home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  #home_intro {
+    order: 1;
+    width: 100vw;
+    flex-grow: 1;
+  }
+
+  #home_img {
+    order: 2;
+    width: 100vw;
+    flex-grow: 0;
+  }
+  #headshot_img {
+    width: 80%;
+    height: auto;
+  }
+
+  #intro_info {
+    display: none;
+  }
 }
 </style>

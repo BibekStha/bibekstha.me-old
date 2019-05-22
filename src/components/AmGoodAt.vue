@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs2 offset-xs4>
+  <v-flex sm2 xs12 offset-sm4 offset-xs0>
     <v-layout row justify-center>
       <v-dialog
         v-model="dialog"
@@ -105,5 +105,11 @@ export default {
   text-align: start;
   font-weight: 300;
   color: #2962ff;
+}
+
+@media screen and (max-width: 620px) {
+  #skills_container {
+    padding: 5px 10px;
+  }
 }
 </style>
