@@ -31,9 +31,11 @@
                 Projects I have worked on
               </h2>
               <portfolio></portfolio>
-              <sensen-humber></sensen-humber>
+              <joballation></joballation>
               <dota-stats></dota-stats>
               <erudition></erudition>
+              <rpsls></rpsls>
+              <sensen-humber></sensen-humber>
               <get-together></get-together>
             </v-layout>
           </v-container>
@@ -45,17 +47,21 @@
 
 <script>
 import DotaStats from "../components/projects/DotaStats.vue";
+import Joballation from "../components/projects/Joballation.vue";
 import Erudition from "../components/projects/Erudition.vue";
 import GetTogether from "../components/projects/GetTogether.vue";
+import Rpsls from "../components/projects/Rpsls.vue";
 import Portfolio from "../components/projects/Portfolio.vue";
 import SensenHumber from "../components/projects/SensenHumber.vue";
 export default {
   name: "Projects",
   components: {
     DotaStats,
+    Joballation,
     Erudition,
     GetTogether,
     Portfolio,
+    Rpsls,
     SensenHumber
   },
   data() {

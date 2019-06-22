@@ -17,19 +17,17 @@
           </v-flex>
 
           <v-flex xs7 project_detail>
-            We redesigned a hospital website from group up and created content
-            management system for the admins and hospital staffs to manage
-            website content. It was built on ASP.NET Core 2.0.
+            We wanted to create something where people can come together and help each other for events/parties. 
+            So we ended up with a party planning application where users, the organizers, 
+            would manage their events/parties at one place and their guests can interact as well.
             <br /><br />
-            Among three features I built, donation feature is the one I'm proud
-            of. I implemented the feature with PayPal API using the official sdk
-            provided by their team. Even though it was official sdk, I had to
-            debug the code in several steps to make the program work which
-            involved considerable amount of my time. In the end, it all worked
-            out.
+            I primarily worked on user and event management functionality, and carpool functionality. Users can register and login to create 
+            new events and add their descriptions. Once the event is created, users can invite their guests 
+            and we will send them an invite through email. Users can also create to-do list, food list and drink list. 
+            They can create polls if they want their guests' opinions, a fund pool where they can raise fund, 
+            depending on the event.
             <br /><br />
-            I also worked as repository admin and front end developer for the
-            website.
+            Guests can also communicate with each other to plan for carpool to reach the venue.
           </v-flex>
         </v-layout>
       </v-flex>
